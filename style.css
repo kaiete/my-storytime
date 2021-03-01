@@ -1,0 +1,19 @@
+body {
+  font-family: Ubuntu, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-weight: bolder;
+  animation: h-animation 0.7s infinite alternate;
+}
+
+@keyframes h-animation {
+  from {
+    font-weight: lighter;
+  }
+
+  to {
+    font-weight: bolder;
+  }
+}
