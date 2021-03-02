@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <h1>Welcome to <span class="my">My StoryTime</span>!</h1>
+        <h4 class="subheader">Here you can personalize your StoryTime experience.</h4>
+        <br>
+        <div class="control-panel">
+            <h4>Favourite story</h4>
+            <span>
+                <button onclick="localStorage.setItem('favourite','thewatershrew')">The Water Shrew</button>
+                <button onclick="localStorage.setItem('favourite','tmcj')">The Mouse called John</button>
+                <br>
+                <button onclick="saveAndClose()">Save and close</button>
+            </span>
+        </div>
+        <style>
+            .my {
+                animation: my-animation 1.5s infinite alternate;
+            }
+            body {
+                font-family: Helvetica, sans-serif;
+                text-align: center;
+                align-items: center;
+            }
+            .subheader {
+                font-style: italic;
+            }
+            @keyframes my-animation {
+                from {
+                    font-weight: lighter;
+                }
+
+                to {
+                    font-weight: bolder;
+                }
+            }
+        </style>
+        <script src="controlpanel.js"></script>
+    </body>
+</html>
