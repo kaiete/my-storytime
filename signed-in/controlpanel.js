@@ -5,3 +5,7 @@ function saveAndClose() {
 function deletePreferences() {
     localStorage.clear()
 }
+const gpcValue = navigator.globalPrivacyControl
+if (gpcValue) {
+  document.getElementById("gpc").hidden = false
+}
