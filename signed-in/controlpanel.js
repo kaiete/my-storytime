@@ -9,3 +9,6 @@ const gpcValue = navigator.globalPrivacyControl
 if (gpcValue) {
   document.getElementById("gpc").hidden = false
 }
+function didntDeleteSettings() {
+  document.getElementById("didntdelete").hidden = false
+}
